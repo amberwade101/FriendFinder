@@ -1,31 +1,210 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Tables Page</title>
 
-  <!-- Latest compiled and minified CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <title>Tables Page</title>
+    
+      <!-- Latest compiled and minified CSS & JS -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+      <script src="https://code.jquery.com/jquery.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    
+    </head>
+    <body>
+    <!-- Main Bootstrap Search -->
+  <!--<div class="container">
 
-</head>
-<body>
-        <h2>Survey Questions</h2>
-        <form id="addmovie" class="button-size">
-            <textarea type="text" name="movie"></textarea>
-            <button type="submit">Save Movie!</button>
-        </form>
+  Jumbotron for Title -->
+    <div class="jumbotron" style="background-color: #20315A ; color: white;">
+      <h1 class="text-center">
+        <strong>
+          <i class="fa fa-newspaper-o"></i> Bobs Burger Friend Finder</strong>
+      </h1>
+    </div>
+
+    <!-- Row for Searching New York Times -->
+    <div class="row">
+      <div class="col-sm-12">
+        <br>
+        <!-- First panel is for handling the search parameters -->
+        <div class="card">
+          <div class="card-header">
+            <strong>
+              <i class="fa fa-list-alt"></i>Who Are You? And What Your About?</strong>
+          </div>
+          <div class="card-body">
+
+            <!-- Here we create an HTML Form for handling the inputs-->
+            <form role="form">
+
+              <!-- Here we create the text box for capturing the search term-->
+              <div class="form-group">
+                <label for="input">Name:</label>
+                <input type="text" class="form-control" id="name-input">
+              </div>
+
+              <div class="form-group">
+                <label for="input">Your Photo Link:</label>
+                <input type="text" class="form-control" id="link-input">
+              </div>
+              <br>
+              <hr>
+              <!-- Here we capture the number of records that the user wants to retrieve  -->
+              <div class="form-group">
+                <h5>Do you like birds?</h5>
+                <select id="question1">
+                  <option value="" >Choose your option</option>
+                  <option value="1">1 (Strongly Disagree)</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5 (Strongly Agree)</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <h5>Do you like bunny ears?</h5>
+                <select id="question2">
+                  <option value="" >Choose your option</option>
+                  <option value="1">1 (Strongly Disagree)</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5 (Strongly Agree)</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <h5>Do you burgers?</h5>
+                <select id="question3">
+                  <option value="" >Choose your option</option>
+                  <option value="1">1 (Strongly Disagree)</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5 (Strongly Agree)</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <h5>Do you like Teddy?</h5>
+                <select id="question4">
+                  <option value="" >Choose your option</option>
+                  <option value="1">1 (Strongly Disagree)</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5 (Strongly Agree)</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <h5>Do you like pudding?</h5>
+                <select id="question5">
+                  <option value="" >Choose your option</option>
+                  <option value="1">1 (Strongly Disagree)</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5 (Strongly Agree)</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <h5>Do you like plots and schemes?</h5>
+                <select id="question6">
+                  <option value="" >Choose your option</option>
+                  <option value="1">1 (Strongly Disagree)</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5 (Strongly Agree)</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <h5>Do you like money?</h5>
+                <select id="question7">
+                  <option value="" >Choose your option</option>
+                  <option value="1">1 (Strongly Disagree)</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5 (Strongly Agree)</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <h5>Do or did you like ditching school?</h5>
+                <select id="question8">
+                  <option value="" >Choose your option</option>
+                  <option value="1">1 (Strongly Disagree)</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5 (Strongly Agree)</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <h5>Do you like Jimmy Junior's dance moves?</h5>
+                <select id="question9">
+                  <option value="" >Choose your option</option>
+                  <option value="1">1 (Strongly Disagree)</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5 (Strongly Agree)</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <h5>Do you despise Jimmy Pesto?</h5>
+                <select id="question10">
+                  <option value="" >Choose your option</option>
+                  <option value="1">1 (Strongly Disagree)</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5 (Strongly Agree)</option>
+                </select>
+              </div>
+
+             <!-- Button trigger modal -->
+<button type="button" class="submit-btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+Get Your Match!
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Your Bobs Burger Match Is???</h5>
         
-        <h2>Update a Movie</h2>
-        <form id="updatemovie" class="button-size">
-          <input type="text" name="id" placeholder="id">
-            <textarea type="text" name="movie" placeholder="what do you want to update this movie title to?"></textarea>
-            <button type="submit">Update Movie!</button>
-        </form>
+		</div>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <h1 id="bobfriendName"></h1>
+        <img id="modalpic" class="materialboxed" width="650" src="">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="close-btn btn-secondary" data-dismiss="modal">Close</button>
+       
+      </div>
+    </div>
+  </div>
+</div>
+             
 
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    
+    
     <footer class="footer">
       <div class="container">
-        <p><a href="/api/friends">Friends</a> | <a href="https://github.com/amberwade101/FriendFinder">GitHub Repo</a></p>
+        <p><a href="/api/friends" target="_blank">Friends</a> | <a href="https://github.com/amberwade101/FriendFinder" target="_blank">GitHub Repo</a></p>
       </div>
     </footer>
 
@@ -33,4 +212,85 @@
 
 
 </body>
+<script type="text/javascript">
+
+ 
+
+
+function runfriendQuery(){
+  var currentURL = window.location.origin;
+  /*var newclientData=req.body;
+    console.log(newclientData)*/
+
+
+    $('#exampleModal').on('click','show.bs.modal', function () {
+      
+  var newclientData = {
+    name:$("#name-input").val().trim() &&req.body.name,
+    photo:$("#link-input").val().trim() && req.body.photo,
+    score: [
+$("#question1").val(),
+$("#question2").val(),
+$("#question3").val(),
+$("#question4").val(),
+$("#question5").val(),
+$("#question6").val(),
+$("#question7").val(),
+$("#question8").val(),
+$("#question9").val(),
+$("#question10").val(),
+
+    ]
+   
+  };
+  var button = $(event.relatedTarget) // Button that triggered the modal
+  var recipient = button.data('whatever') // Extract info from data-* attributes
+  $.post(currentURL + "/api/friends",newclientData,function(data) {
+    friendsArray.push(newclientData);
+    res.json(newclientData);
+    
+})
+  // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
+  // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
+  var modal = $(this)
+  modal.find('.modal-title').text('Matched ' + friendsArray[i].name)
+  modal.find('.modal-body input').val("src",friendsArray[i].photo)
+})
+
+/*$("button").on("click", function(event){
+  
+  $(".modal-body").text(friendsArray[i].name);
+  $("#modalpic").attr("src",friendsArray[i].photo);
+  view.append(name, photo);
+
+  /*var newtable= req.body; // table object
+    tables.push(newtable);
+    res.json(newtable);
+
+  });*/
+
+  var userScores=[];
+  for(var i=0;i<newclientData.score.length;i++) {
+userScores.push(parseInt(newclientData.score[i]));
+
+console.log(usersScores)
+  }
+
+  
+
+
+  
+  
+
+
+  
+    
+    
+    
+    };
+
+
+
+
+</script>
 </html>

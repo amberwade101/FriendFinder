@@ -15,7 +15,27 @@ app.use(bodyParser.json());
 
 
 require( "./app/routing/apiRoutes")(app);
-require("./app/routing/htmlRoutes")(app);
+var survey= require("./app/routing/htmlRoutes")(app);
+
+
+
+
+
+  
+
+  
+
+  
+;
+
+
+  
+
+  
+
+  
+;
+
 
 
 

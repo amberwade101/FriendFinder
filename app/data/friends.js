@@ -1,36 +1,21 @@
 var friendsArray=
 
 [
-	{
-		name: "Ahmed",
-		photo: "https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
-		scores: [
-            5,
-            1,
-            4,
-            4,
-            5,
-            1,
-            2,
-            5,
-            4,
-            1
-		]
-	},
+	
 	{
 		name: "Louise Belcher",
 		photo: "https://vignette.wikia.nocookie.net/bobsburgerpedia/images/b/b9/Louise_render.png/revision/latest?cb=20130113075349",
 		scores: [
-			2,
-			4,
+			1,
+			5,
 			1,
 			1,
 			1,
+			5,
+			5,
+			5,
 			1,
-			1,
-			2,
-			1,
-			5
+			1
 		]
 	},
 	{
@@ -42,11 +27,11 @@ var friendsArray=
 			5,
 			1,
 			1,
-			5,
+			3,
 			5,
 			1,
 			1,
-			1
+			5
 		]
 	},
 	{
@@ -55,30 +40,30 @@ var friendsArray=
 		"scores": [
 			5,
 			1,
+			4,
+			3,
 			2,
 			1,
-			3,
-			4,
 			1,
-			3,
-			3,
-			4
+			1,
+			5,
+			2
 		]
 	},
 	{
 		"name": "Linda Belcher",
 		"photo": "https://vignette.wikia.nocookie.net/bobsburgerpedia/images/b/b7/Lindab.png/revision/latest?cb=20130113071354",
 		"scores": [
-			1,
-			1,
-			5,
-			5,
-			5,
-			5,
-			5,
-			5,
-			5,
-			1
+			4,
+			4,
+			4,
+			4,
+			4,
+			4,
+			4,
+			4,
+			4,
+			4
 		]
 	},
 	{
@@ -106,3 +91,8 @@ var friendsArray=
 
 
   module.exports = friendsArray;
+
+
+  /*$("#bobfriendName").text(data.name);
+  $("#modalpicic").attr("src",data.photo);
+  $("#exampleModal").modal("toggle");*/
